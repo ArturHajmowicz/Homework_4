@@ -73,30 +73,6 @@ public class GradeService {
         return false;
     }
 
-    public Map<String, String> createingDublicateMap(String[][] data) {
-
-        Map<String, String> regular = new TreeMap<>();
-        Map<String, String> duplicates = new TreeMap();
-
-        for (int i = 0; i < data.length; i++) {
-
-        }
-
-
-
-
-        System.out.println("DUB");
-        System.out.println(duplicates);
-
-
-
-
-
-
-        return duplicates;
-    }
-
-
 
 
     public String[][] parseWithDecimal(String[][] arr2) {
