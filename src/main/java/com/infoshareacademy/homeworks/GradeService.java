@@ -1,30 +1,12 @@
 package com.infoshareacademy.homeworks;
 
-import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.*;
-import java.util.stream.Collectors;
+
 
 public class GradeService {
 
-    public static void main(String[] args) {
-
-        final String[][] data = new String[][]{
-                {"Ania", "5"},
-                {"Tomek", "6"},
-                {"Kasia", "3"},
-                {"Albert", "2"},
-                {"Ania", "3"},
-                {"Tomek", "1"},
-                {"Tomek", "4"},
-                {"Bartek", "2"}
-        };
-
-        calculateAverage(data);
-
-    }
-
-    public static String[][] calculateAverage(String[][] data) {
+    public String[][] calculateAverage(String[][] data) {
 
         GradeService gradeService = new GradeService();
 
@@ -74,7 +56,6 @@ public class GradeService {
     }
 
 
-
     public String[][] parseWithDecimal(String[][] arr2) {
         DecimalFormat decimalFormat = new DecimalFormat("#.00");
         for (int g = 0; g < arr2.length; g++) {
@@ -84,10 +65,6 @@ public class GradeService {
 
         return arr2;
     }
-
-
-
-
 
 
 }
